@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Create Playlist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            color: #686161;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 100px;
+        }
+
+        .title {
+            color: #686161;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .input-field {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #686161;
+            width: 230px;
+            padding: 10px 0;
+            color: white;
+            font-size: 16px;
+            margin-bottom: 40px;
+            text-align: center;
+            outline: none;
+        }
+
+        .button {
+            width: 121px;
+            height: 38px;
+            border-radius: 100px;
+            background: transparent;
+            border: 1px solid #686161;
+            color: #E83F42;
+            font-size: 16px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        #cancel-btn {
+            color: #ffffff;
+            border: 1px solid #686161;
+        }
+    </style>
+</head>
+<body>
+    <div class="back-button">←</div>
+    
+    <div class="container">
+        <div class="title">GIVE YOUR PLAYLIST NAME</div>
+        <input type="text" class="input-field" placeholder="Playlist name">
+        <button class="button">CREATE</button>
+        <button class="button" id="cancel-btn">CANCLE</button>
+    </div>
+</body>
+</html>
